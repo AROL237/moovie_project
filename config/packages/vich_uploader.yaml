@@ -1,0 +1,12 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        movie:
+            uri_prefix: /movie
+            upload_destination: '%kernel.project_dir%/public/movie'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+        trailer:
+            uri_prefix: /trailer
+            upload_destination: '%kernel.project_dir%/public/trailer'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
